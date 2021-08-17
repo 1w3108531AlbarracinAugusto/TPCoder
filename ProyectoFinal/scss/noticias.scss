@@ -1,0 +1,61 @@
+
+
+
+
+
+.contenedor{
+    display:flex;
+    justify-content:center;
+    align-content:center;       
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.fotos{
+
+    width: 100vh;
+    height:100vh;
+    display:grid;
+    grid-template-columns: repeat(4 , 1fr);
+    grid-template-rows: repeat(3 , 1fr);
+    gap: 15px;
+    justify-items: center;
+    align-items: center;
+    
+    
+
+}
+
+.img{
+    width: 15vh; 
+    height: 15vh; 
+    border-radius:10%;
+    border: 2px solid;
+    border-color: black;
+    text-align: center;
+    transition:  .2s;
+    opacity: 0.5;  
+    
+}
+.img:hover {
+    transform: scale(1.5);
+    opacity: 1;
+    
+    }
+
+    
+
+  
+    @media screen and (max-width:750px){
+        .fotos{
+    
+            display:grid;
+            grid-template-columns: repeat(4 , 1fr);
+            grid-template-rows: repeat(4 , 1fr);
+            gap: 15px;
+            justify-items: center;
+            align-items: center; 
+             
+        }
+       
+    }

@@ -1,0 +1,166 @@
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <link rel="stylesheet" href="scss/estilo.css">
+    <link rel="icon" href="IMG/icono/favicon-32x32.png" type="image">
+    <meta name="description" content="Formulario de contacto para consultar cualquier duda que tengas">
+    <meta name="keywords"
+        content="formulario, consultanos,stock, precios , productos , padel, pelotas, telefono,mail, contactar">
+    <title>Formulario</title>
+</head>
+
+
+<body>
+    <section id="headerForm">
+        <header class="">
+            <nav id="nav">
+                <div class="centrarLista">
+                    <ul class="lHorizontal">
+                        <li><a target="_blank" href=" "><img src="/img/icono/favicon-32x32.png" alt=""></a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="formulario.html">Consultanos</a></li>
+                        <li><a href="noticias.html">Clases</a></li>
+                        <li><a target="_blank" href="https://goo.gl/maps/GfZu62v7VuNQDin69">Ubicacion</a></li>
+                        <li><a href="index.html">Productos</a>
+                            <ul>
+                                <li><a href="#idPaletas">Paletas</a></li>
+                                <li><a href="#idPelotas">Pelotas</a></li>
+                                <li><a href="#idAccesorios">Accesorios</a></li>
+                            </ul>
+                        <li><a href="index.html">Redes Sociales</a>
+                            <ul>
+                                <li><a target="_blank"
+                                        href="https://www.facebook.com/augusto.albarracin.1/">Facebook</a>
+                                    <img src="/img/icono/facebook.png" class="redSocial__icono" alt="">
+                                </li>
+                                <li><a target="_blank" href="https://wa.me/3513045701">WhatsApp</a><img
+                                        src="/img/icono/whatsapp.png" class="redSocial__icono" alt=""></li>
+                                <li><a target="_blank" href="https://www.instagram.com/augustoaalb/">Instagram</a>
+                                    <img src="/img/icono/instagram.png" class="redSocial__icono" alt="">
+                                </li>
+                            </ul>
+                        </li>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+    </section>
+
+    <div class="container margenInf">
+        <form id="form" name="formulario">
+            <div class="container">
+                <h1>Formulario de Consulta</h1>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputNombre">Nombre</label>
+                    <input type="text" class="form-control" id="inputNombre" placeholder="Nombre" name="nombre" />
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputApellido">Apellido</label>
+                    <input type="text" class="form-control" id="inputApellido" placeholder="Apellido" name="apellido" />
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputEmail">Email</label>
+                    <input type="email" class="form-control" id="inputEmail" placeholder="Email" name="email" />
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputTelefono4">telefono</label>
+                    <input type="text" class="form-control" id="inputTelefono4" placeholder="Telefono"
+                        name="telefono" />
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputDireccion4">Direccion</label>
+                    <input type="text" class="form-control" id="inputDireccion4" name="direccion"
+                        placeholder="Direccion" />
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="inputProvincia4">Provincia</label>
+                    <select id="inputProvincia4" class="form-control" name="provincia">
+                        <option selected value="">Elegir Provincia..</option>
+                        <option value="1">Cordoba</option>
+                        <option value="2">Buenos Aires</option>
+                        <option value="3">La Pampa</option>
+                        <option value="4">Santa Fe</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-2">
+                    <label for="inputCodigo4">Codigo Postal</label>
+                    <input type="text" class="form-control" id="inputCodigo4" name="codigoP" />
+                </div>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="sexo" id="exampleRadios1" value="option1" />
+                <label class="form-check-label" for="exampleRadios1"> Hombre </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="sexo" id="exampleRadios2" value="option2" />
+                <label class="form-check-label" for="exampleRadios2"> Mujer </label>
+            </div>
+            <div class="form-check disabled" id="aca">
+                <input class="form-check-input" type="radio" name="sexo" id="exampleRadios3" value="option3" />
+
+                <label class="form-check-label" for="exampleRadios3"> Otro </label>
+            </div>
+            <br />
+
+            <div class="input-group form-group col-md-12">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">Cual es su consulta ?</span>
+                </div>
+                <textarea class="form-control" aria-label="With textarea"
+                    placeholder="Escriba su mensaje aqui..."></textarea>
+            </div>
+
+            <div class="form-group" id="aca1">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck" name="terminos" />
+                    <label class="form-check-label" for="gridCheck">
+                        Desea que le enviemos promociones a su correo electronico.
+                    </label>
+                </div>
+            </div>
+            <button onclick="" type="button" class="btn btn-primary">
+                Consultar
+            </button>
+            <button onclick="" type="button" class="btn btn-primary">
+                Limpiar
+            </button>
+        </form>
+    </div>
+
+    <footer>
+        <div class="footerForm centrarLista">
+            <p class="copyright">Todos los derechos Reservados 2020 &copy;</p>
+            <a href="index.html">www.PadelCba.com</a>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+</body>
+
+
+
+</html>
